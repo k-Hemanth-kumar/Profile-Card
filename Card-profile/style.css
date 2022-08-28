@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=poppins");
+*, *::after, *::before {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+
+.frame {
+  height: 350px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.content {
+  display: inline-flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.content .card1, .card2, .card3 {
+  position: relative;
+  height: 350px;
+  width: 250px;
+  border-radius: 20px;
+  background-color: rgba(1, 24, 32, 0.599);
+  text-align: center;
+}
+
+.content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.content h1 {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.content i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px;
+  transition: all 0.5s ease-in-out;
+}
+.content i:hover {
+  transform: scale(1.1);
+}
+
+.content i:nth-child(1) {
+  background-image: linear-gradient(to right, #59cddf, #498cdf);
+}
+
+.content i:nth-child(2) {
+  background-image: linear-gradient(to right, rgb(235, 2, 204), rgb(18, 22, 135));
+}
+
+.content i:nth-child(3) {
+  background-image: linear-gradient(to left, rgb(202, 41, 246), rgb(1, 167, 200));
+}
+
+.content .icons {
+  margin-bottom: 10px;
+}
+
+.content a {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #48a;
+  padding: 10px 0px;
+  border-radius: 20px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
+.content a:hover {
+  background-color: white;
+  color: #48a;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.btn-1, .btn-2, .btn-3 {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+.btn-1 {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
